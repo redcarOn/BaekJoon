@@ -26,13 +26,13 @@ public class G5_20055 {
 		int cnt = 0;
 
 		while (true) {
-			int tmp = belt[N * 2 - 1];
-			for (int i = N * 2 - 1; i > 0; i--) {
+			int tmp = belt[belt.length- 1];
+			for (int i = belt.length - 1; i > 0; i--) {
 				belt[i] = belt[i - 1];
 			}
 			belt[0] = tmp;
 
-			for (int i = N - 1; i > 0; i--) {
+			for (int i = robot.length - 1; i > 0; i--) {
 				robot[i] = robot[i - 1];
 			}
 			robot[0] = robot[N - 1] = false;
