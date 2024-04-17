@@ -15,7 +15,9 @@ public class G5_14719 {
 		int H = Integer.parseInt(st.nextToken());
 		int W = Integer.parseInt(st.nextToken());
 		int[] block = new int[W];
-
+		
+		if (H<0) return;
+		
 		st = new StringTokenizer(br.readLine(), " ");
 		for (int i = 0; i < W; i++) {
 			block[i] = Integer.parseInt(st.nextToken());
